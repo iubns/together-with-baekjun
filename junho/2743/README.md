@@ -1,4 +1,20 @@
-# [#2743]
+[#2743. 단어 길이 재기](https://www.acmicpc.net/problem/2743)
+<img src="https://static.solved.ac/tier_small/1.svg" width="16" height="16">
+
+---
+
+## 📍 문제 정보
+
+- **문제 번호**: 2743
+- **🏷️ 문제 유형**: 구현, 문자열
+
+---
+
+## 📝 문제 링크
+
+> [백준 #2743번 문제 바로가기](https://www.acmicpc.net/problem/2743)
+> 
+> ⚠️ 문제 내용은 위 링크에서 직접 확인해주세요.
 
 ---
 
