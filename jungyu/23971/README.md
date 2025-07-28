@@ -1,4 +1,20 @@
-# [#23971]
+[#23971. ZOAC 4](https://www.acmicpc.net/problem/23971)
+<img src="https://static.solved.ac/tier_small/3.svg" width="16" height="16">
+
+---
+
+## 📍 문제 정보
+
+- **문제 번호**: 23971
+- **🏷️ 문제 유형**: 수학, 사칙연산
+
+---
+
+## 📝 문제 링크
+
+> [백준 #23971번 문제 바로가기](https://www.acmicpc.net/problem/23971)
+> 
+> ⚠️ 문제 내용은 위 링크에서 직접 확인해주세요.
 
 ---
 
@@ -17,4 +33,3 @@
 ## 🔥 풀이 핵심
 
 > 수용할 수 있는 최대 인원을 구하므로 ceil을 통해 올리기, import math 하기
-
