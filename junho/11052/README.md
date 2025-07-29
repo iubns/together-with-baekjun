@@ -1,4 +1,20 @@
-# [#11052]
+[#11052. 카드 구매하기](https://www.acmicpc.net/problem/11052)
+<img src="https://static.solved.ac/tier_small/10.svg" width="16" height="16">
+
+---
+
+## 📍 문제 정보
+
+- **문제 번호**: 11052
+- **🏷️ 문제 유형**: 다이나믹 프로그래밍
+
+---
+
+## 📝 문제 링크
+
+> [백준 #11052번 문제 바로가기](https://www.acmicpc.net/problem/11052)
+> 
+> ⚠️ 문제 내용은 위 링크에서 직접 확인해주세요.
 
 ---
 
