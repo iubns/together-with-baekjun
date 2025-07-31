@@ -1,4 +1,20 @@
-# [#11053]
+[#11053. 가장 긴 증가하는 부분 수열](https://www.acmicpc.net/problem/11053)
+<img src="https://static.solved.ac/tier_small/9.svg" width="16" height="16">
+
+---
+
+## 📍 문제 정보
+
+- **문제 번호**: 11053
+- **🏷️ 문제 유형**: 다이나믹 프로그래밍, 가장 긴 증가하는 부분 수열 문제
+
+---
+
+## 📝 문제 링크
+
+> [백준 #11053번 문제 바로가기](https://www.acmicpc.net/problem/11053)
+> 
+> ⚠️ 문제 내용은 위 링크에서 직접 확인해주세요.
 
 ---
 
