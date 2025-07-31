@@ -1,4 +1,3 @@
-package baek.Q1000;
 import java.util.Scanner;
 
 class Q1001{
