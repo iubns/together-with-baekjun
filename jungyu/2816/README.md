@@ -1,4 +1,20 @@
-# [#2816]
+[#2816. 디지털 티비](https://www.acmicpc.net/problem/2816)
+<img src="https://static.solved.ac/tier_small/5.svg" width="16" height="16">
+
+---
+
+## 📍 문제 정보
+
+- **문제 번호**: 2816
+- **🏷️ 문제 유형**: 구현, 해 구성하기
+
+---
+
+## 📝 문제 링크
+
+> [백준 #2816번 문제 바로가기](https://www.acmicpc.net/problem/2816)
+> 
+> ⚠️ 문제 내용은 위 링크에서 직접 확인해주세요.
 
 ---
 
@@ -17,4 +33,3 @@
 ## 🔥 풀이 핵심
 
 > KBS1, KBS2의 위치에 따른 변화 계산
-
