@@ -1,6 +1,6 @@
 ## 📍 문제 정보
 
-- [#1152. 단어의 개수](https://www.acmicpc.net/problem/1152)
+- [#10798. 세로읽기](https://www.acmicpc.net/problem/10798)
   <img src="https://static.solved.ac/tier_small/1.svg" width="16" height="16">
 
 - **🏷️ 문제 유형**: 구현, 문자열
