@@ -1,4 +1,20 @@
-# [#2822]
+[#2822. 점수 계산](https://www.acmicpc.net/problem/2822)
+<img src="https://static.solved.ac/tier_small/6.svg" width="16" height="16">
+
+---
+
+## 📍 문제 정보
+
+- **문제 번호**: 2822
+- **🏷️ 문제 유형**: 정렬
+
+---
+
+## 📝 문제 링크
+
+> [백준 #2822번 문제 바로가기](https://www.acmicpc.net/problem/2822)
+> 
+> ⚠️ 문제 내용은 위 링크에서 직접 확인해주세요.
 
 ---
 
