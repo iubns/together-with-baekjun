@@ -135,7 +135,7 @@ def scan_user_folders():
                 'total_count': 0,
                 'last_update': None
             }
-            
+
             # 각 문제 폴더 스캔
             for problem_folder in user_folder.iterdir():
                 if problem_folder.is_dir() and problem_folder.name.isdigit():
@@ -143,7 +143,6 @@ def scan_user_folders():
                     if problem_readme.exists():
                         problem_info = get_problem_info_from_readme(problem_readme)
                         if problem_info:
-                            # Git에서 첫 번째 커밋 시간 가져오기 (파일 생성 시점)
                             try:
                                 import subprocess
                                 result = subprocess.run(
@@ -151,46 +150,30 @@ def scan_user_folders():
                                     capture_output=True, text=True
                                 )
                                 if result.returncode == 0 and result.stdout.strip():
-                                    # 첫 번째 라인이 가장 오래된 커밋
                                     first_commit = result.stdout.strip().split('\n')[0]
                                     commit_datetime_str = first_commit
-                                    
                                     try:
-                                        # Git 커밋 시간 형식: '2025-07-22 00:45:46+0900'을 파싱
-                                        # '+0900' 형식을 '+09:00'으로 변환
                                         if '+' in commit_datetime_str and commit_datetime_str.count(':') == 2:
-                                            # 시간대 부분을 올바른 형식으로 변환
                                             datetime_part, tz_part = commit_datetime_str.rsplit('+', 1)
-                                            if len(tz_part) == 4:  # +0900 형식
-                                                tz_formatted = f"+{tz_part[:2]}:{tz_part[2:]}"  # +09:00 형식으로 변환
+                                            if len(tz_part) == 4:
+                                                tz_formatted = f"+{tz_part[:2]}:{tz_part[2:]}"
                                                 commit_datetime_str_formatted = f"{datetime_part}{tz_formatted}"
                                             else:
                                                 commit_datetime_str_formatted = commit_datetime_str
                                         else:
                                             commit_datetime_str_formatted = commit_datetime_str
-                                        
-                                        # 커밋 시간을 파싱
                                         commit_datetime = datetime.fromisoformat(commit_datetime_str_formatted)
-                                        
-                                        # 한국 시간으로 변환
                                         if KST is None:
-                                            # UTC+9 직접 계산
                                             commit_datetime_kst = commit_datetime.replace(tzinfo=None) + timedelta(hours=9)
                                         else:
                                             commit_datetime_kst = commit_datetime.astimezone(KST).replace(tzinfo=None)
-                                        
-                                        # 오전 4시 이전이면 전날로 처리 (한국 시간 기준)
                                         if commit_datetime_kst.hour < 4:
                                             commit_date = (commit_datetime_kst.date() - timedelta(days=1)).strftime('%Y-%m-%d')
                                         else:
                                             commit_date = commit_datetime_kst.date().strftime('%Y-%m-%d')
-                                        
-                                        # 디버깅 정보 출력
                                         print(f"🔍 {problem_info['number']}번: 커밋시간 {first_commit} -> 한국시간 {commit_datetime_kst} -> 날짜 {commit_date}")
-                                        
                                         problem_info['date'] = commit_date
                                     except Exception as e:
-                                        # 파싱 오류 시 현재 날짜 사용
                                         today = get_korea_today().strftime('%Y-%m-%d')
                                         print(f"❌ {problem_info['number']}번: Git 오류 {e}, 현재 날짜 사용 {today}")
                                         problem_info['date'] = today
@@ -200,22 +183,21 @@ def scan_user_folders():
                             except Exception as e:
                                 problem_info['date'] = get_korea_now().strftime('%Y-%m-%d')
                                 print(f"❌ {problem_info['number']}번: Git 오류 {e}, 현재 날짜 사용 {problem_info['date']}")
-                            
                             users_data[username]['problems'].append(problem_info)
-            
-        # 문제들을 날짜순으로 정렬
-        users_data[username]['problems'].sort(key=lambda x: x['date'])
-        users_data[username]['total_count'] = len(users_data[username]['problems'])
-        
-        # 디버깅 정보
-        if users_data[username]['problems']:
-            print(f"📊 {username}: {len(users_data[username]['problems'])}문제, 시작일 {users_data[username]['problems'][0]['date']}")
-            for p in users_data[username]['problems']:
-                print(f"  - {p['date']}: {p['number']}번 {p['title']}")
-        
-        if users_data[username]['problems']:
-            users_data[username]['last_update'] = users_data[username]['problems'][-1]['date']
-    
+
+            # 문제들을 날짜순으로 정렬
+            users_data[username]['problems'].sort(key=lambda x: x['date'])
+            users_data[username]['total_count'] = len(users_data[username]['problems'])
+
+            # 디버깅 정보
+            if users_data[username]['problems']:
+                print(f"📊 {username}: {len(users_data[username]['problems'])}문제, 시작일 {users_data[username]['problems'][0]['date']}")
+                for p in users_data[username]['problems']:
+                    print(f"  - {p['date']}: {p['number']}번 {p['title']}")
+
+            if users_data[username]['problems']:
+                users_data[username]['last_update'] = users_data[username]['problems'][-1]['date']
+
     return users_data
 
 def calculate_missing_weekdays(problems):
