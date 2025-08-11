@@ -1,4 +1,20 @@
-# [#2420]
+[#2420. 사파리월드](https://www.acmicpc.net/problem/2420)
+<img src="https://static.solved.ac/tier_small/1.svg" width="16" height="16">
+
+---
+
+## 📍 문제 정보
+
+- **문제 번호**: 2420
+- **🏷️ 문제 유형**: 구현, 사칙연산, 수학
+
+---
+
+## 📝 문제 링크
+
+> [백준 #2420번 문제 바로가기](https://www.acmicpc.net/problem/2420)
+> 
+> ⚠️ 문제 내용은 위 링크에서 직접 확인해주세요.
 
 ---
 
