@@ -1,4 +1,20 @@
-# [#10987]
+[#10987. 모음의 개수](https://www.acmicpc.net/problem/10987)
+<img src="https://static.solved.ac/tier_small/2.svg" width="16" height="16">
+
+---
+
+## 📍 문제 정보
+
+- **문제 번호**: 10987
+- **🏷️ 문제 유형**: 구현, 문자열
+
+---
+
+## 📝 문제 링크
+
+> [백준 #10987번 문제 바로가기](https://www.acmicpc.net/problem/10987)
+> 
+> ⚠️ 문제 내용은 위 링크에서 직접 확인해주세요.
 
 ---
 
