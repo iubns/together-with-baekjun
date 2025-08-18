@@ -1,4 +1,20 @@
-# [#17103]
+[#17103. 골드바흐 파티션](https://www.acmicpc.net/problem/17103)
+<img src="https://static.solved.ac/tier_small/9.svg" width="16" height="16">
+
+---
+
+## 📍 문제 정보
+
+- **문제 번호**: 17103
+- **🏷️ 문제 유형**: 수학, 정수론, 소수 판정, 에라토스테네스의 체
+
+---
+
+## 📝 문제 링크
+
+> [백준 #17103번 문제 바로가기](https://www.acmicpc.net/problem/17103)
+> 
+> ⚠️ 문제 내용은 위 링크에서 직접 확인해주세요.
 
 ---
 
