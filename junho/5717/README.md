@@ -1,4 +1,20 @@
-# [#5717]
+[#5717. 상근이의 친구들](https://www.acmicpc.net/problem/5717)
+<img src="https://static.solved.ac/tier_small/1.svg" width="16" height="16">
+
+---
+
+## 📍 문제 정보
+
+- **문제 번호**: 5717
+- **🏷️ 문제 유형**: 수학, 사칙연산
+
+---
+
+## 📝 문제 링크
+
+> [백준 #5717번 문제 바로가기](https://www.acmicpc.net/problem/5717)
+> 
+> ⚠️ 문제 내용은 위 링크에서 직접 확인해주세요.
 
 ---
 
