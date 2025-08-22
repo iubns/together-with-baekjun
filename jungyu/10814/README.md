@@ -1,4 +1,20 @@
-# [#10814]
+[#10814. 나이순 정렬](https://www.acmicpc.net/problem/10814)
+<img src="https://static.solved.ac/tier_small/6.svg" width="16" height="16">
+
+---
+
+## 📍 문제 정보
+
+- **문제 번호**: 10814
+- **🏷️ 문제 유형**: 정렬, 집합과 맵
+
+---
+
+## 📝 문제 링크
+
+> [백준 #10814번 문제 바로가기](https://www.acmicpc.net/problem/10814)
+> 
+> ⚠️ 문제 내용은 위 링크에서 직접 확인해주세요.
 
 ---
 
@@ -17,4 +33,3 @@
 ## 🔥 풀이 핵심
 
 > python인 경우 lambda 사용하면 편함
-
